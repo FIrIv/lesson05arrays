@@ -131,9 +131,9 @@ public class Main {
         myPrintArray(diaMatrix);
 
         // задание 6
-        int[] arrayMain = {5,4,3,2,1};
+        int[] arrayMain = {8,6,3,7,9};
         int[] arrayTemp = new int[5];
-        System.out.println(Arrays.toString(arrayMain));
+        System.out.println(" Начальный массив: " + Arrays.toString(arrayMain));
         int i6=0;
         for (i6 = 0; i6 < arrayMain.length; i6++) {
             arrayTemp[i6] = arrayMain[arrayMain.length-i6-1];
@@ -141,18 +141,18 @@ public class Main {
         for (i6 = 0; i6 < arrayMain.length; i6++) {
             arrayMain[i6] = arrayTemp[i6];
         }
-        System.out.println(Arrays.toString(arrayMain));
+        System.out.println(" Обратно: " + Arrays.toString(arrayMain));
 
         // задание 7
         int[] arrayMain7 = arrayMain;
         int temp = 0;
-        System.out.println(Arrays.toString(arrayMain7));
+        System.out.println(" Начальный массив: " + Arrays.toString(arrayMain7));
         for (int i7 = 0; i7 < arrayMain7.length/2; i7++) {
             temp = arrayMain7[arrayMain7.length-i7-1];
             arrayMain7[arrayMain7.length-i7-1] = arrayMain7[i7];
             arrayMain7[i7] = temp;
         }
-        System.out.println(Arrays.toString(arrayMain7));
+        System.out.println(" Обратно: " + Arrays.toString(arrayMain7));
 
         // задание 8
         int[] arrayToFindOne = {-6, 2, 5, -8, 8, 10, 4, -7, 12, 1, -1};
